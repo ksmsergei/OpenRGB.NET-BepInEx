@@ -1,6 +1,6 @@
 using System;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Describes a Protocol Version

@@ -1,6 +1,6 @@
 using System.Runtime.InteropServices;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Represents a color.

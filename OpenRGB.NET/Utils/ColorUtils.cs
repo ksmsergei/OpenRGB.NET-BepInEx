@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using OpenRGB_BepInEx.OpenRGB.NET.Models;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Utils;
+namespace OpenRGB.NET.Utils;
 
 /// <summary>
 ///     Utility class for colors.

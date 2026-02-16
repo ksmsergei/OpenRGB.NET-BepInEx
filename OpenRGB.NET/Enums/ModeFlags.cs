@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Enums;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Flags representing the capabilities a mode can have.

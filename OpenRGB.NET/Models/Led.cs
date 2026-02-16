@@ -1,4 +1,4 @@
-namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Led class containing the name of the LED

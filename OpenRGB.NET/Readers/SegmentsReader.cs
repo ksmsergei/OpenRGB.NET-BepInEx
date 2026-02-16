@@ -1,8 +1,6 @@
-using OpenRGB_BepInEx.OpenRGB.NET.Enums;
-using OpenRGB_BepInEx.OpenRGB.NET.Models;
-using OpenRGB_BepInEx.OpenRGB.NET.Utils;
+using OpenRGB.NET.Utils;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Readers;
+namespace OpenRGB.NET;
 
 internal readonly struct SegmentsReader : ISpanReader<Segment[]>
 {

@@ -1,11 +1,7 @@
 using System;
 using System.Runtime.InteropServices;
-using OpenRGB_BepInEx.OpenRGB.NET.Enums;
-using OpenRGB_BepInEx.OpenRGB.NET.Models;
-using OpenRGB_BepInEx.OpenRGB.NET.Readers;
-using OpenRGB_BepInEx.OpenRGB.NET.Writables;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Client for the OpenRGB SDK.

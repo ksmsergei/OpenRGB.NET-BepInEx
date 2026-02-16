@@ -1,7 +1,6 @@
-using OpenRGB_BepInEx.OpenRGB.NET.Models;
-using OpenRGB_BepInEx.OpenRGB.NET.Utils;
+using OpenRGB.NET.Utils;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET;
+namespace OpenRGB.NET;
 
 internal interface ISpanReader<out T>
 {

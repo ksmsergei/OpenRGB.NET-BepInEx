@@ -1,4 +1,4 @@
-﻿namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
+﻿namespace OpenRGB.NET;
 
 /// <summary>
 ///     Represents a Plugin installed on the OpenRGB server.

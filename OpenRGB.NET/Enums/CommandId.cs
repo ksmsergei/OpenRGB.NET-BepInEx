@@ -1,4 +1,4 @@
-﻿namespace OpenRGB_BepInEx.OpenRGB.NET.Enums;
+﻿namespace OpenRGB.NET;
 
 /// <summary>
 ///     Enum representing the various commands supported by the SDK server.

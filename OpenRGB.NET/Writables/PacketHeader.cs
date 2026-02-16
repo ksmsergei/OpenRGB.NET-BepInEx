@@ -1,8 +1,7 @@
 using System;
-using OpenRGB_BepInEx.OpenRGB.NET.Enums;
-using OpenRGB_BepInEx.OpenRGB.NET.Utils;
+using OpenRGB.NET.Utils;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Writables;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Packet Header class containing the command ID and the length of the data to be sent.

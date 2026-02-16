@@ -1,9 +1,7 @@
-﻿using System;
-
-namespace OpenRGB_BepInEx.OpenRGB.NET.Utils;
+﻿namespace OpenRGB.NET.Utils;
 
 #if DEBUG
-
+using System;
 
 [AttributeUsage(AttributeTargets.Struct)]
 internal class NonCopyableAttribute : Attribute { }

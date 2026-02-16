@@ -1,6 +1,4 @@
-using OpenRGB_BepInEx.OpenRGB.NET.Enums;
-
-namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Represents a segment of a Zone.

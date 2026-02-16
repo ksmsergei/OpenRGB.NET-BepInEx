@@ -1,6 +1,4 @@
-using OpenRGB_BepInEx.OpenRGB.NET.Enums;
-
-namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
+namespace OpenRGB.NET;
 
 /// <summary>
 ///     Zone class containing the name, type and size of a Zone.

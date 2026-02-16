@@ -1,6 +1,6 @@
-using OpenRGB_BepInEx.OpenRGB.NET.Utils;
+using OpenRGB.NET.Utils;
 
-namespace OpenRGB_BepInEx.OpenRGB.NET.Writables;
+namespace OpenRGB.NET;
 
 internal readonly struct EmptyArg : ISpanWritable
 {
