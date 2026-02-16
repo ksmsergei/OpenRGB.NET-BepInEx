@@ -1,4 +1,4 @@
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Matrix Map class for the matrix Zone type

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace OpenRGB.NET.Utils;
+namespace ksm.OpenRGB.Utils;
 
 #if DEBUG
 [NonCopyable]

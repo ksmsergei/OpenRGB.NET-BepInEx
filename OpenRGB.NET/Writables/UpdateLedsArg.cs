@@ -1,7 +1,7 @@
 using System.Runtime.CompilerServices;
-using OpenRGB.NET.Utils;
+using ksm.OpenRGB.Utils;
 
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 internal readonly record struct UpdateLedsArg(ushort ColorCount) : ISpanWritable
 {

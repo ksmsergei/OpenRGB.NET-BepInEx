@@ -1,4 +1,4 @@
-﻿namespace OpenRGB.NET;
+﻿namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Enum representing the different types a zone can be.

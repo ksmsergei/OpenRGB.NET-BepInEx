@@ -1,7 +1,7 @@
 using BepInEx;
 using BepInEx.Logging;
 
-namespace OpenRGB_BepInEx;
+namespace ksm.OpenRGB;
 
 [BepInPlugin(MyPluginInfo.PLUGIN_GUID, MyPluginInfo.PLUGIN_NAME, MyPluginInfo.PLUGIN_VERSION)]
 public class OpenRGBBepInEx : BaseUnityPlugin

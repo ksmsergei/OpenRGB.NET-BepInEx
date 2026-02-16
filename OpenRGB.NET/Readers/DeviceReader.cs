@@ -1,7 +1,7 @@
 using System;
-using OpenRGB.NET.Utils;
+using ksm.OpenRGB.Utils;
 
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 internal readonly struct DeviceReader : ISpanReader<Device>
 {

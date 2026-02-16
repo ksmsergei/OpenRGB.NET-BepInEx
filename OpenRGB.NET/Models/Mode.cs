@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Mode class containing the parameters one mode has.

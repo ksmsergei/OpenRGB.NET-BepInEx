@@ -1,4 +1,4 @@
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Led class containing the name of the LED

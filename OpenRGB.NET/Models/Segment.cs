@@ -1,4 +1,4 @@
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Represents a segment of a Zone.

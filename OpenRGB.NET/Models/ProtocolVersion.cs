@@ -1,6 +1,6 @@
 using System;
 
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Describes a Protocol Version

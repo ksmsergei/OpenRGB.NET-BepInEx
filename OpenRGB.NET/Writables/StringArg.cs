@@ -1,6 +1,6 @@
-using OpenRGB.NET.Utils;
+using ksm.OpenRGB.Utils;
 
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 internal readonly record struct StringArg(string Value) : ISpanWritable
 {

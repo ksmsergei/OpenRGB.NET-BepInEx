@@ -1,4 +1,4 @@
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Zone class containing the name, type and size of a Zone.

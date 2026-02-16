@@ -1,7 +1,7 @@
 using System;
-using OpenRGB.NET.Utils;
+using ksm.OpenRGB.Utils;
 
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Packet Header class containing the command ID and the length of the data to be sent.

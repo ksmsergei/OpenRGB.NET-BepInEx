@@ -1,4 +1,4 @@
-﻿namespace OpenRGB.NET.Utils;
+﻿namespace ksm.OpenRGB.Utils;
 
 #if DEBUG
 using System;

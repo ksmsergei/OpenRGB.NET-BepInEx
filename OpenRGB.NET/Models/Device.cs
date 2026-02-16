@@ -1,4 +1,4 @@
-namespace OpenRGB.NET;
+namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Device class containing all the info present in an OpenRGB RGBController

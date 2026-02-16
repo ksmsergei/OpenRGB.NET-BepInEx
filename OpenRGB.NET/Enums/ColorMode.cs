@@ -1,4 +1,4 @@
-﻿namespace OpenRGB.NET;
+﻿namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Enum representing how a specific Mode uses

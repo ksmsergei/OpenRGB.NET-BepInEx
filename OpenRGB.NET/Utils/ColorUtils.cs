@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace OpenRGB.NET.Utils;
+namespace ksm.OpenRGB.Utils;
 
 /// <summary>
 ///     Utility class for colors.

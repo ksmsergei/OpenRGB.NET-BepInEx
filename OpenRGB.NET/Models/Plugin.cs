@@ -1,4 +1,4 @@
-﻿namespace OpenRGB.NET;
+﻿namespace ksm.OpenRGB;
 
 /// <summary>
 ///     Represents a Plugin installed on the OpenRGB server.
