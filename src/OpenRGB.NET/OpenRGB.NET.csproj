@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+        <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <Version>3.1.1</Version>
@@ -15,8 +15,9 @@
         <PackageProjectUrl>https://github.com/diogotr7/OpenRGB.NET</PackageProjectUrl>
         <RepositoryUrl>https://github.com/diogotr7/OpenRGB.NET</RepositoryUrl>
         <PackageTags>openrgb, rgb, sdk, client</PackageTags>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
-    
+
     <ItemGroup>
         <InternalsVisibleTo Include="$(AssemblyName).Tests" />
     </ItemGroup>

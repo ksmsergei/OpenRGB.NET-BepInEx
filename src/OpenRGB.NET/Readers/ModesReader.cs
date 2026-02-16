@@ -5,7 +5,7 @@ namespace OpenRGB.NET;
 
 internal readonly struct ModesReader : ISpanReader<Mode[]>
 {
-    public static Mode[] ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
+    public Mode[] ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
     {
         if (protocolVersion is not { } version)
             throw new ArgumentNullException(nameof(protocolVersion));
@@ -29,7 +29,7 @@ internal readonly struct ModesReader : ISpanReader<Mode[]>
             var brightness = version.SupportsBrightnessAndSaveMode ? reader.Read<uint>() : 0;
             var direction = reader.Read<uint>();
             var colorMode = (ColorMode)reader.Read<uint>();
-            var colors = ColorsReader.ReadFrom(ref reader);
+            var colors = new ColorsReader().ReadFrom(ref reader);
 
             modes[i] = new Mode(version, i, name, modeValue, modeFlags, speedMin, speedMax,
                 brightMin, brightMax, colorMin, colorMax, speed, brightness,

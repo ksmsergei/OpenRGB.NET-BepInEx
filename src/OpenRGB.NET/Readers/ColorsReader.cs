@@ -4,7 +4,7 @@ namespace OpenRGB.NET;
 
 internal readonly struct ColorsReader : ISpanReader<Color[]>
 {
-    public static Color[] ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
+    public Color[] ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
     {
         var count = reader.Read<ushort>();
         var colors = new Color[count];

@@ -121,7 +121,8 @@ internal sealed class OpenRgbConnection : IDisposable
     {
         var reader = new SpanReader(_pendingRequests[command].Take(_cancellationTokenSource.Token));
         //this deviceId here is a bit hacky, it's used because some Models store their own index
-        return TReader.ReadFrom(ref reader, CurrentProtocolVersion, (int)deviceId);
+        var readerInstance = new TReader();
+        return readerInstance.ReadFrom(ref reader, CurrentProtocolVersion, (int)deviceId);
     }
 
     public TResult Request<TArgument, TReader, TResult>(CommandId command, uint deviceId, TArgument requestData, ReadOnlySpan<byte> additionalData = default)
@@ -178,9 +179,9 @@ internal sealed class OpenRgbConnection : IDisposable
         if (!Directory.Exists(directory))
             Directory.CreateDirectory(directory);
         
-        var lastFileName = Directory.EnumerateFiles(directory).MaxBy(f => f);
+        var lastFileName = Directory.EnumerateFiles(directory).OrderByDescending(f => f).FirstOrDefault();
         var lastFileNumber = lastFileName is null ? -1 :
-            int.Parse(Path.GetFileNameWithoutExtension(lastFileName).Split('-')[0]);
+            int.Parse(Path.GetFileNameWithoutExtension((string)lastFileName).Split('-')[0]);
         
         File.WriteAllBytes(Path.Combine(directory, $"{lastFileNumber + 1:D2}-{(sending ? "Send" : "Receive")}-{command}.bin"), buffer.ToArray());
     }

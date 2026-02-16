@@ -15,8 +15,8 @@ internal ref struct SpanWriter(Span<byte> span)
     
     public void Write<T>(T value) where T : unmanaged
     {
-        MemoryMarshal.Write(Span[Position..], in value);
-        Position += Unsafe.SizeOf<T>();
+        MemoryMarshal.Write(Span[Position..], ref value);
+        unsafe { Position += sizeof(T); }
     }
 
     public void Write(ReadOnlySpan<byte> span)
@@ -34,7 +34,7 @@ internal ref struct SpanWriter(Span<byte> span)
     public void Write(string value)
     {
         var byteCount = Encoding.ASCII.GetByteCount(value.AsSpan());
-        Encoding.ASCII.GetBytes(value, Span.Slice(Position, byteCount));
+        Encoding.ASCII.GetBytes(value.AsSpan(), Span.Slice(Position, byteCount));
         Position += byteCount;
         Write<byte>(0);
     }

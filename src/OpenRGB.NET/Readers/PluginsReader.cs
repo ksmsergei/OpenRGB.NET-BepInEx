@@ -4,7 +4,7 @@ namespace OpenRGB.NET;
 
 internal readonly struct PluginsReader : ISpanReader<Plugin[]>
 {
-    public static Plugin[] ReadFrom(ref SpanReader reader, ProtocolVersion? p = default, int? i = default, int? outerCount = default)
+    public Plugin[] ReadFrom(ref SpanReader reader, ProtocolVersion? p = default, int? i = default, int? outerCount = default)
     {
         // ReSharper disable once UnusedVariable
         var dataSize = reader.Read<uint>();

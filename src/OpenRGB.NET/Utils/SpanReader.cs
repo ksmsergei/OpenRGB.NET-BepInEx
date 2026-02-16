@@ -15,7 +15,7 @@ internal ref struct SpanReader(ReadOnlySpan<byte> span)
     internal T Read<T>() where T : unmanaged
     {
         var value = MemoryMarshal.Read<T>(Span[Position..]);
-        Position += Unsafe.SizeOf<T>();
+        unsafe { Position += sizeof(T); }
         return value;
     }
     

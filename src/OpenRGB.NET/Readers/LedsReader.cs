@@ -4,7 +4,7 @@ namespace OpenRGB.NET;
 
 internal readonly struct LedsReader : ISpanReader<Led[]>
 {
-    public static Led[] ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
+    public Led[] ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
     {
         var ledCount = reader.Read<ushort>();
 

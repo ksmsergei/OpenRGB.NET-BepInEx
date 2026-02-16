@@ -5,7 +5,7 @@ namespace OpenRGB.NET;
 
 internal readonly struct DeviceReader : ISpanReader<Device>
 {
-    public static Device ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
+    public Device ReadFrom(ref SpanReader reader, ProtocolVersion? protocolVersion = default, int? index = default, int? outerCount = default)
     {
         if (protocolVersion is not { } protocol)
             throw new ArgumentNullException(nameof(protocolVersion));
@@ -24,10 +24,10 @@ internal readonly struct DeviceReader : ISpanReader<Device>
         var location = reader.ReadLengthAndString();
         var modeCount = reader.Read<ushort>();
         var activeMode = reader.Read<int>();
-        var modes = ModesReader.ReadFrom(ref reader, protocol, outerCount: modeCount);
-        var zones = ZonesReader.ReadFrom(ref reader, protocol, index: deviceIndex);
-        var leds = LedsReader.ReadFrom(ref reader);
-        var colors = ColorsReader.ReadFrom(ref reader);
+        var modes = new ModesReader().ReadFrom(ref reader, protocol, outerCount: modeCount);
+        var zones = new ZonesReader().ReadFrom(ref reader, protocol, index: deviceIndex);
+        var leds = new LedsReader().ReadFrom(ref reader);
+        var colors = new ColorsReader().ReadFrom(ref reader);
 
         return new Device(deviceIndex, (DeviceType)deviceType,
             name, vendor, description, version, serial, location,
