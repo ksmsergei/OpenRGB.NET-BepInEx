@@ -1,9 +1,8 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Text;
 
-namespace OpenRGB.NET.Utils;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Utils;
 
 #if DEBUG
 [NonCopyable]

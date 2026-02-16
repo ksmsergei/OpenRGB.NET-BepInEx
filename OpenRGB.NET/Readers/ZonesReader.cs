@@ -1,7 +1,9 @@
 using System;
-using OpenRGB.NET.Utils;
+using OpenRGB_BepInEx.OpenRGB.NET.Enums;
+using OpenRGB_BepInEx.OpenRGB.NET.Models;
+using OpenRGB_BepInEx.OpenRGB.NET.Utils;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Readers;
 
 internal readonly struct ZonesReader : ISpanReader<Zone[]>
 {

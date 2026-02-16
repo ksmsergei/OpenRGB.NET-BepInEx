@@ -1,4 +1,6 @@
-namespace OpenRGB.NET;
+using OpenRGB_BepInEx.OpenRGB.NET.Enums;
+
+namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
 
 /// <summary>
 ///     Device class containing all the info present in an OpenRGB RGBController

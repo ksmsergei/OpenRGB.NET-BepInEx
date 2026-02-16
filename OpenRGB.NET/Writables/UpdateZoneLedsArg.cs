@@ -1,7 +1,7 @@
-using System.Runtime.CompilerServices;
-using OpenRGB.NET.Utils;
+using OpenRGB_BepInEx.OpenRGB.NET.Models;
+using OpenRGB_BepInEx.OpenRGB.NET.Utils;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Writables;
 
 internal readonly record struct UpdateZoneLedsArg(uint ZoneId, ushort ColorCount) : ISpanWritable
 {

@@ -1,6 +1,6 @@
-using OpenRGB.NET.Utils;
+using OpenRGB_BepInEx.OpenRGB.NET.Utils;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Writables;
 
 internal readonly record struct ModeOperationArg(uint ModeId, ModeArg Mode) : ISpanWritable
 {

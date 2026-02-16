@@ -1,6 +1,8 @@
 ﻿using System;
+using OpenRGB_BepInEx.OpenRGB.NET.Enums;
+using OpenRGB_BepInEx.OpenRGB.NET.Models;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET;
 
 /// <summary>
 ///     Interface for an OpenRGB SDK client.

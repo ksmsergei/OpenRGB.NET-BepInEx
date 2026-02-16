@@ -1,4 +1,4 @@
-﻿namespace OpenRGB.NET;
+﻿namespace OpenRGB_BepInEx.OpenRGB.NET.Enums;
 
 /// <summary>
 ///     Enum representing the various device types supported.

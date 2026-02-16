@@ -1,4 +1,4 @@
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
 
 /// <summary>
 ///     Matrix Map class for the matrix Zone type

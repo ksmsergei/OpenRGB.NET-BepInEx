@@ -8,9 +8,13 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Threading;
 using System.Threading.Tasks;
-using OpenRGB.NET.Utils;
+using OpenRGB_BepInEx.OpenRGB.NET.Enums;
+using OpenRGB_BepInEx.OpenRGB.NET.Models;
+using OpenRGB_BepInEx.OpenRGB.NET.Readers;
+using OpenRGB_BepInEx.OpenRGB.NET.Utils;
+using OpenRGB_BepInEx.OpenRGB.NET.Writables;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET;
 
 internal sealed class OpenRgbConnection : IDisposable
 {

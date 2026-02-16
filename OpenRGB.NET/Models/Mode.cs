@@ -1,6 +1,7 @@
 ﻿using System;
+using OpenRGB_BepInEx.OpenRGB.NET.Enums;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Models;
 
 /// <summary>
 ///     Mode class containing the parameters one mode has.

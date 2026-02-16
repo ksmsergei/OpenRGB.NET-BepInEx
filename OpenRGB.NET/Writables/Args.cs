@@ -1,7 +1,6 @@
-using System.Runtime.CompilerServices;
-using OpenRGB.NET.Utils;
+using OpenRGB_BepInEx.OpenRGB.NET.Utils;
 
-namespace OpenRGB.NET;
+namespace OpenRGB_BepInEx.OpenRGB.NET.Writables;
 
 internal readonly record struct Args<T1>(T1 Arg1) : ISpanWritable where T1 : unmanaged
 {
