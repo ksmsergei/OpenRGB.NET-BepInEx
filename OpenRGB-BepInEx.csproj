@@ -9,8 +9,6 @@
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-        
-        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 
         <DebugSymbols>true</DebugSymbols>
         <DebugType>embedded</DebugType>
