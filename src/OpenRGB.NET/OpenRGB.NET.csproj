@@ -1,6 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
+        <OutputType>Library</OutputType>
         <TargetFramework>netstandard2.1</TargetFramework>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
@@ -9,29 +10,14 @@
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
         <Authors>Diogo Trindade</Authors>
         <Company>Diogo Trindade</Company>
-        <Description>Client for the OpenRGB SDK</Description>
-        <Copyright>Copyright © 2020 Diogo Trindade</Copyright>
+        <AssemblyName>OpenRGB-BepInEx</AssemblyName>
+        <Product>OpenRGB-BepInEx</Product>
+        <Description>BepInEx client for the OpenRGB SDK </Description>
+        <Copyright>Copyright © 2026 ksmsergei. Original © 2020 Diogo Trindade</Copyright>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <PackageProjectUrl>https://github.com/diogotr7/OpenRGB.NET</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/diogotr7/OpenRGB.NET</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/ksmsergei/OpenRGB.NET-BepInEx</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/ksmsergei/OpenRGB.NET-BepInEx</RepositoryUrl>
         <PackageTags>openrgb, rgb, sdk, client</PackageTags>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
-
-    <ItemGroup>
-        <InternalsVisibleTo Include="$(AssemblyName).Tests" />
-    </ItemGroup>
-
-    <!--  only add this analyzer on debug builds-->
-    <ItemGroup Condition=" '$(Configuration)' == 'Debug'">
-        <PackageReference Include="NonCopyableAnalyzer" Version="0.7.0" />
-        <PackageReference Include="ErrorProne.NET.CoreAnalyzers" Version="0.4.0-beta.1">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-        <PackageReference Include="ErrorProne.NET.Structs" Version="0.4.0-beta.1">
-            <PrivateAssets>all</PrivateAssets>
-            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-        </PackageReference>
-    </ItemGroup>
 </Project>
